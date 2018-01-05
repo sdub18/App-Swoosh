@@ -44,6 +44,8 @@ class LeagueVCViewController: UIViewController {
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        <#code#>
+        if let skillVC = segue.destination as? SkillVC {
+            skillVC.player = player
+        }
     }
 }
